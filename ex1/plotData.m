@@ -4,9 +4,9 @@ function plotData(x, y)
 %   population and profit.
 
 figure; % open a new figure window
-plot(x, y, '-.pg;;')
-xlabel("Xs")
-ylabel("Ys")
+plot(x, y, 'r+', 'MarkerSize', 4);
+xlabel("Xs");
+ylabel("Ys");
 % ====================== YOUR CODE HERE ======================
 % Instructions: Plot the training data into a figure using the 
 %               "figure" and "plot" commands. Set the axes labels using
