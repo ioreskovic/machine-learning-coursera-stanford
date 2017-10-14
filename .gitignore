@@ -228,7 +228,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # Coursera submission
-# diary
-# /**/token.mat
+diary
 
 # End of https://www.gitignore.io/api/linux,macos,matlab,windows,intellij,intellij+iml,intellij+all
