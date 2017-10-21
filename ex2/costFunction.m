@@ -19,14 +19,14 @@ grad = zeros(size(theta));
 %
 % Note: grad should have the same dimensions as theta
 %
+poshX = sigmoid(X * theta);
+neghX = 1 - poshX;
+posCost = -(y' * log(poshX));
+negCost = -((1 - y)' * log(neghX));
+J = (posCost + negCost) / m;
 
-
-
-
-
-
-
-
+e = poshX - y;
+grad = (X' * e) / m;
 % =============================================================
 
 end
