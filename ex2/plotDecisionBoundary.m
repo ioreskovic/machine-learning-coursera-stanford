@@ -20,11 +20,11 @@ if size(X, 2) <= 3
     plot_y = (-1./theta(3)).*(theta(2).*plot_x + theta(1));
 
     % Plot, and adjust axes for better viewing
-    plot(plot_x, plot_y)
+    plot(plot_x, plot_y);
     
     % Legend, specific for the exercise
     legend('Admitted', 'Not admitted', 'Decision Boundary')
-    axis([30, 100, 30, 100])
+    axis([30, 100, 30, 100]);
 else
     % Here is the grid range
     u = linspace(-1, 1.5, 50);
@@ -41,7 +41,7 @@ else
 
     % Plot z = 0
     % Notice you need to specify the range [0, 0]
-    contour(u, v, z, [0, 0], 'LineWidth', 2)
+    contour(u, v, z, [0, 0], 'LineWidth', 2);
 end
 hold off
 
