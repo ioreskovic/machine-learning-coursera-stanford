@@ -29,13 +29,8 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
 %       
-
-
-
-
-
-
-
+classMatrix = X * all_theta';
+[v, p] = max(classMatrix, [], 2);
 % =========================================================================
 
 
